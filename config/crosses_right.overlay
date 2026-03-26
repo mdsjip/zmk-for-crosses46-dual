@@ -2,6 +2,6 @@
     status = "okay";
     device = <&trackball_central>;
     input-processors 
-        = <&zip_scroll_scaler 2 1>
+        = <&zip_xy_scaler 2 1>
         , <&zip_ble_report_rate_limit>;
 };
