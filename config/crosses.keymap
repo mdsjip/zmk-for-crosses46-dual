@@ -75,6 +75,7 @@
 		
 		snipe_layer {
 			display-name = "Snipe";
+			bindings = <>;
 		};
     };
 };
