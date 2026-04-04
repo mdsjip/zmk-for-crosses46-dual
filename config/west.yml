@@ -17,5 +17,8 @@ manifest:
       remote: SolidAlloy
       revision: zephyr-4.1
       import: config/west.yml
+    - name: zmk-tri-state
+      remote: dhruvinsh
+      revision: main
   self:
     path: config

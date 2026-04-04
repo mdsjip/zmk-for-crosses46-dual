@@ -22,6 +22,41 @@
             #binding-cells = <0>;
             bindings = <&kp LC(LS(N3))>, <&macro_pause_for_release>, <&to 0>; 
         };
+		
+		snap_left: snap_left {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &kp LGUI>
+				, <&macro_tap &kp LEFT>
+				, <&macro_tap &kp F24>
+				, <&macro_release &kp LGUI>;
+		};
+
+		snap_right: snap_right {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &kp LGUI>
+				, <&macro_tap &kp RIGHT>
+				, <&macro_tap &kp F24>
+				, <&macro_release &kp LGUI>;
+		};
+    };
+	
+	behaviors {
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            
+            // 1st: Toggle Alt ON. 2nd: Tap Tab. 3rd: Toggle Alt OFF on interrupt.
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            
+            // Optional: If you want to use Shift+Tab to cycle backwards without 
+            // closing the menu, you can add the physical key-position of your 
+            // Shift key to this array.
+            // ignored-key-positions = < >; 
+        };
     };
 
     chosen { zmk,physical-layout = &gggw_crosses_54_layout; };
