@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/SolidAlloy
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
+    - name: kot149
+      url-base: https://github.com/kot149
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -22,5 +24,8 @@ manifest:
     - name: zmk-tri-state
       remote: dhruvinsh
       revision: main
+    - name: zmk-scroll-snap
+      remote: kot149
+      revision: v1
   self:
     path: config
