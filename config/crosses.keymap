@@ -73,7 +73,7 @@
             display-name = "Base";
             bindings = <
                 &kp TAB &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp ESC
-                &kp LSHFT   &kp Z  &kp P  &kp D  &kp L  &kp X    &kp KP_EQUAL &kp U  &kp O     &kp Y   &kp Q    &kp BSPC
+                &&td_shift   &kp Z  &kp P  &kp D  &kp L  &kp X    &kp KP_EQUAL &kp U  &kp O     &kp Y   &kp Q    &kp BSPC
                 &kp W &kp S  &kp N  &kp T  &kp H  &kp K    &kp KP_MINUS &kp E  &kp A     &kp I   &kp C &kp B
                 &mo 1 &kp V  &kp F  &kp G  &kp M  &kp J    &kp FSLH &kp SEMI  &kp DOT &kp COMMA &kp APOS &kp LCTRL
                             &kp LGUI &mo 3 &kp R   &kp SPACE &kp RET &kp LALT
@@ -108,7 +108,7 @@
                 &alt_tab   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6       &kp F7     &kp F8     &kp F9    &kp F10    &kp LC(LS(ESC))
                 &trans     &none    &kp LS(N9)   &kp LS(N0)   &kp C_BRI_DEC   &kp C_BRI_INC   &kp LS(LEFT_BRACE)    &kp LS(RIGHT_BRACE)    &kp LS(N8)    &kp LS(N1)    &none    &kp DEL
                 &kp LA(W)   &mo 4    &mkp RCLK  &mkp MCLK  &mkp LCLK  &kp C_PLAY_PAUSE     &kp LEFT_BRACKET    &kp RIGHT_BRACKET    &kp UP    &none    &kp HOME   &kp END
-                &kp LCTRL   &kp C_MUTE   &kp C_VOLUME_DOWN    &kp C_VOLUME_UP   &kp LG(V)   &kp LG(LS(S))    &kp BACKSLASH    &kp LEFT    &DOWN    &RIGHT   &kp PAGE_UP    &kp PAGE_DOWN
+                &kp LCTRL   &kp C_MUTE   &kp C_VOLUME_DOWN    &kp C_VOLUME_UP   &kp LG(V)   &kp LG(LS(S))    &kp BACKSLASH    &kp LEFT    &kp DOWN    &kp RIGHT   &kp PAGE_UP    &kp PAGE_DOWN
                                                      &kp LG(P)   &trans   &trans     &lang_en    &lang_ua    &lang_jp     
             >;
         };
