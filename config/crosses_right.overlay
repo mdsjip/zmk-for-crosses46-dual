@@ -17,6 +17,16 @@
     };
 };
 
+&zip_scroll_snap {
+    // The default is 10. Lowering this makes it decide much faster.
+    require-n-samples = <3>; 
+    
+    // The default is 1500. This is the velocity/distance threshold that bypasses 
+    // the sample requirement and forces an instant snap. Lowering this makes 
+    // quick flicks snap instantly.
+    immediate-snap-threshold = <500>; 
+};
+
 &trackball_peripheral_listener {
   status = "okay";
   input-processors
