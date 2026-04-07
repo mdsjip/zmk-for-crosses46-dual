@@ -86,7 +86,7 @@
         space_r: space_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp R>;
+            bindings = <&kp SPACE>, <&kp LS(R)>;
             mods = <(MOD_LSFT)>; // Only triggers when Left Shift is held
         };
 
@@ -96,8 +96,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <180>;
-            quick-tap-ms = <120>;
-            global-quick-tap;
+            quick-tap-ms = <75>;
             bindings = <&kp>, <&kp>; // Uses standard keypresses for zero lag
         };
     };
