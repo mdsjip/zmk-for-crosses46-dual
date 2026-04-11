@@ -254,8 +254,8 @@
 		snipe_layer {
 			display-name = "Snipe";
 			bindings = <
-                &LS(TAB)         &none     &none     &none     &none     &none     &none       &none     &none       &none       &none       &kp LC(LS(ESC))
-                &none         &none     &none     &none     &none     &none     &none       &none     &none       &none       &none       &none
+                &none         &none     &none     &none     &none     &none     &none       &none     &none       &none       &none       &kp LC(LS(ESC))
+                &kp LS(TAB)         &none     &none     &none     &none     &none     &none       &none     &none       &none       &none       &none
                 &none         &none     &mkp RCLK  &mkp MCLK  &mkp LCLK  &none     &none  &none     &kp LG(UP)       &kp LS(HOME)   &kp LS(END)       &none
                 &none         &none     &none     &none     &none     &none     &none       &snap_right   &kp LG(DOWN)    &snap_left     &kp LS(PAGE_UP)    &kp LS(PAGE_DOWN)
                                                      &none     &none     &none     &none       &none     &none     
