@@ -125,7 +125,7 @@
             tapping-term-ms = <200>; // Time window to register the double-tap
             
             // 1st binding = Single Tap, 2nd binding = Double Tap
-            bindings = <&kp N>, <&num_word>;
+            bindings = <&kp N>, <&num_word 5>;
         };
 		
 		// Home Row Mod for the LEFT hand (Triggers only if a RIGHT hand key is pressed)
