@@ -212,6 +212,7 @@
             tapping-term-ms = <170>;
 			require-prior-idle-ms = <120>; 
             bindings = <&mo>, <&kp>;
+			hold-trigger-key-positions = <48>; // a key that will certainly not be used for rolling. Everything else should result in tap.
         };
     };
 
