@@ -1,6 +1,8 @@
 layout:
-  qmk_info_json: keymap-drawer/crosses-layout.json
-  layout_name: gggw_crosses_54_layout
+  cols_thumbs_notation: 444^4^4^4+3> 3<+44^4^4^44
+  #cols_thumbs_notation: 4v4v4444v+3> 3<+4v4444v4v
+  #cols_thumbs_notation: 4v4v4v444v+3> 3<+4v444v4v4v
+  #cols_thumbs_notation: 4v4v44^44+3>>> 3<<<+444^44v4v
 layers:
   Base:
     - - '~'
@@ -333,3 +335,5 @@ draw_config:
   glyph_hold_size: 16
   glyph_shifted_size: 16
   glyphs: {}
+  key_w: 56
+  split_gap: 112

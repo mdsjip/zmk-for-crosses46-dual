@@ -1,0 +1,10 @@
+# Based on ./.zmk-workspace/zmk/app/scripts/requirements.txt
+# with additional packages needed for local ZMK Studio-enabled builds
+
+remarshal==1.3.0
+jsonschema==4.26.0
+protobuf==6.33.6
+grpcio-tools==1.80.0
+PyYAML==6.0.3
+google==3.0.0
+keymap-drawer==0.23.0
