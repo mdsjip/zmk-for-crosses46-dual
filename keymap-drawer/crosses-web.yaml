@@ -1,11 +1,8 @@
 layout:
   cols_thumbs_notation: 444^4^4^4+3> 3<+44^4^4^44
-  #cols_thumbs_notation: 4v4v4444v+3> 3<+4v4444v4v
-  #cols_thumbs_notation: 4v4v4v444v+3> 3<+4v444v4v4v
-  #cols_thumbs_notation: 4v4v44^44+3>>> 3<<<+444^44v4v
 layers:
   Base:
-    - - '~'
+    - - ESCAPE
       - '1'
       - '2'
       - '3'
@@ -16,7 +13,7 @@ layers:
       - '8'
       - '9'
       - '0'
-      - '`'
+      - BACKSPACE
     - - $$mdi:keyboard-tab$$
       - Q
       - W
@@ -28,8 +25,8 @@ layers:
       - I
       - O
       - P
-      - $$mdi:backspace$$
-    - - Ctrl
+      - '|'
+    - - LEFT SHIFT
       - t: A
         h: Ctrl
       - t: S
@@ -49,7 +46,7 @@ layers:
       - t: ;
         h: Ctrl
       - ''''
-    - - Shift
+    - - LEFT CONTROL
       - Z
       - X
       - C
@@ -60,16 +57,40 @@ layers:
       - ','
       - .
       - /
-      - $$mdi:keyboard-esc$$
-    - - t: Super
-        h: Mouse
+      - ENTER
+    - - LEFT GUI
       - Lower
+      - t: $$mdi:keyboard-space$$
+        h: Mouse
       - $$mdi:keyboard-space$$
-      - $$mdi:keyboard-return$$
       - Raise
       - AltGr
   Lower:
-    - - '~'
+    - - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+    - - CAPSLOCK
       - '1'
       - '2'
       - '3'
@@ -80,20 +101,10 @@ layers:
       - '8'
       - '9'
       - '0'
-      - '`'
-    - - $$mdi:keyboard-tab$$
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - '9'
-      - '0'
-      - $$mdi:backspace$$
-    - - $$mdi:bluetooth-off$$
+      - t: $$mdi:transfer$$
+        type: trans
+    - - t: $$mdi:transfer$$
+        type: trans
       - h: '1'
         s: $$mdi:bluetooth-connect$$
       - h: '2'
@@ -112,7 +123,9 @@ layers:
         type: trans
       - t: $$mdi:transfer$$
         type: trans
-    - - Shift
+    - - t: $$mdi:transfer$$
+        type: trans
+      - $$mdi:bluetooth-off$$
       - t: $$mdi:transfer$$
         type: trans
       - t: $$mdi:transfer$$
@@ -133,30 +146,44 @@ layers:
         type: trans
       - t: $$mdi:transfer$$
         type: trans
-      - t: $$mdi:transfer$$
+    - - t: $$mdi:transfer$$
         type: trans
-    - - t: Super
-        h: Mouse
       - type: held
-      - $$mdi:keyboard-space$$
-      - $$mdi:keyboard-return$$
       - t: $$mdi:transfer$$
         type: trans
-      - AltGr
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
   Raise:
-    - - '~'
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - '9'
-      - '0'
-      - '`'
-    - - $$mdi:keyboard-tab$$
+    - - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+    - - t: $$mdi:transfer$$
+        type: trans
       - '!'
       - '@'
       - '#'
@@ -167,8 +194,10 @@ layers:
       - KP MULTIPLY
       - (
       - )
-      - $$mdi:backspace$$
-    - - Ctrl
+      - t: $$mdi:transfer$$
+        type: trans
+    - - t: $$mdi:transfer$$
+        type: trans
       - t: $$mdi:transfer$$
         type: trans
       - t: $$mdi:transfer$$
@@ -185,7 +214,8 @@ layers:
       - ']'
       - \
       - '`'
-    - - Shift
+    - - t: $$mdi:transfer$$
+        type: trans
       - t: $$mdi:transfer$$
         type: trans
       - t: $$mdi:transfer$$
@@ -202,14 +232,17 @@ layers:
       - '}'
       - '|'
       - '~'
-    - - t: Super
-        h: Mouse
+    - - t: $$mdi:transfer$$
+        type: trans
       - t: $$mdi:transfer$$
         type: trans
-      - $$mdi:keyboard-space$$
-      - $$mdi:keyboard-return$$
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
       - type: held
-      - AltGr
+      - t: $$mdi:transfer$$
+        type: trans
   Mouse:
     - - t: $$mdi:transfer$$
         type: trans
@@ -306,13 +339,15 @@ layers:
         type: trans
       - t: $$mdi:transfer$$
         type: trans
-    - - type: held
-      - type: held alternate
+    - - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - type: held
       - t: $$mdi:transfer$$
         type: trans
       - t: $$mdi:transfer$$
         type: trans
-      - type: held alternate
       - t: $$mdi:transfer$$
         type: trans
 draw_config:
