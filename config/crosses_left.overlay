@@ -1,15 +1,14 @@
+#include <dt-bindings/zmk/input_transform.h>
+
 &trackball_peripheral {
     cpi = <200>;
-    y-invert;
-	/delete-property/ x-invert;
+    x-invert;
+	/delete-property/ y-invert;
 };
 
 &trackball_peripheral_split {
-	status = "disabled";
-    device = <&trackball_peripheral>;
-    input-processors = <&zip_ble_report_rate_limit>;
-};
-
-&trackball_peripheral {
-	status = "disabled";
+	input-processors
+		= <&zip_xy_to_scroll_mapper>
+		, <&zip_scroll_scaler 1 2>
+		, <&zip_ble_report_rate_limit>;
 };
