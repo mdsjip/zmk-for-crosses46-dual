@@ -50,38 +50,47 @@
 
     chosen { zmk,physical-layout = &gggw_crosses_54_layout; };
 
+    combos {
+        compatible = "zmk,combos";
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <31 32>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "Base";
             bindings = <
-&kp ESCAPE        &kp N1             &kp N2            &kp N3            &kp N4              &kp N5       &kp N6     &kp N7               &kp N8             &kp N9             &kp N0                 &kp BACKSPACE
-&kp TAB           &kp Q              &kp W             &kp E             &kp R               &kp T        &kp Y      &kp U                &kp I              &kp O              &kp P                  &kp PIPE
-&kp LEFT_SHIFT    &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LSHIFT F  &kp G        &kp H      &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z              &kp X             &kp C             &kp V               &kp B        &kp N      &kp M                &kp COMMA          &kp DOT            &kp FSLH               &kp ENTER
-                                                       &kp LEFT_GUI      &mo 1               &lt 3 SPACE  &kp SPACE  &mo 2                &kp RALT
+&kp ESCAPE        &kp N1             &kp N2            &kp N3            &kp N4              &kp N5       &kp N6       &kp N7               &kp N8             &kp N9             &kp N0                 &kp BACKSPACE
+&kp TAB           &kp Q              &kp W             &kp E             &kp R               &kp T        &kp Y        &kp U                &kp I              &kp O              &kp P                  &kp PIPE
+&kp LEFT_SHIFT    &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LSHIFT F  &kp G        &kp H        &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z              &kp X             &kp C             &kp V               &kp B        &kp N        &kp M                &kp COMMA          &kp DOT            &kp FSLH               &kp ENTER
+                                                       &kp LEFT_GUI      &mo 1               &lt 3 SPACE  &lt 4 SPACE  &mo 2                &kp LEFT_ALT
             >;
         };
 
         lower_layer {
             display-name = "Lower";
             bindings = <
-&trans        &trans        &trans        &trans        &trans        &trans        &trans    &trans    &trans  &trans     &trans  &trans
-&kp CAPSLOCK  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
-&trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans        &bt BT_CLR    &trans        &trans        &trans        &trans        &trans    &trans    &trans  &trans     &trans  &trans
-                                          &trans        &trans        &trans        &trans    &trans    &trans
+&kp CAPSLOCK  &kp LOCKING_SCROLL  &kp LOCKING_NUM  &kp PRINTSCREEN  &kp C_BRI_DN  &kp C_BRI_UP  &kp LC(K_MUTE)  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp INS      &kp DEL
+&kp CAPSLOCK  &kp N1              &kp N2           &kp N3           &kp N4        &kp N5        &kp N6          &kp N7      &kp N8        &kp N9        &kp N0       &trans
+&trans        &trans              &trans           &trans           &trans        &trans        &kp LEFT        &kp DOWN    &kp UP        &kp RIGHT     &trans       &trans
+&trans        &trans              &trans           &trans           &trans        &trans        &kp HOME        &kp PG_DN   &kp PG_UP     &kp END       &kp K_CMENU  &trans
+                                                   &trans           &trans        &trans        &trans          &trans      &trans
             >;
         };
 
         raise_layer {
             display-name = "Raise";
             bindings = <
-&trans  &trans    &trans  &trans    &trans    &trans     &trans     &trans     &trans           &trans    &trans    &trans
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-&trans  &trans    &trans  &trans    &trans    &trans     &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans    &trans  &trans    &trans    &trans     &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+&trans  &kp F1    &kp F2  &kp F3    &kp F4    &kp F5     &kp F6     &kp F7     &kp F8        &kp F9    &kp F10   &kp F11
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS   &kp ASTERISK  &kp LPAR  &kp RPAR  &kp F12
+&trans  &trans    &trans  &trans    &trans    &trans     &kp MINUS  &kp EQUAL  &kp LBKT      &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &trans    &trans  &trans    &trans    &trans     &kp UNDER  &kp PLUS   &kp LBRC      &kp RBRC  &kp PIPE  &kp TILDE
                           &trans    &trans    &trans     &trans     &trans     &trans
             >;
         };
@@ -95,6 +104,18 @@
 &trans  &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
                            &trans     &trans     &trans  &trans  &trans  &trans
             >;
+        };
+
+        adjust_layer {
+            bindings = <
+&studio_unlock  &trans         &trans         &trans         &trans         &bt BT_CLR  &bt BT_CLR  &trans         &trans         &trans         &trans         &bt BT_CLR_ALL
+&trans          &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &trans      &trans      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &trans
+&trans          &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &trans      &trans      &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &trans
+&bootloader     &trans         &trans         &trans         &trans         &trans      &trans      &trans         &trans         &trans         &trans         &bootloader
+                                              &trans         &trans         &trans      &trans      &trans         &trans
+            >;
+
+            label = "Adjust";
         };
     };
 };

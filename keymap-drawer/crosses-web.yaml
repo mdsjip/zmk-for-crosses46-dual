@@ -62,34 +62,23 @@ layers:
       - Lower
       - t: $$mdi:keyboard-space$$
         h: Mouse
-      - $$mdi:keyboard-space$$
+      - t: $$mdi:keyboard-space$$
+        h: Adjust
       - Raise
-      - AltGr
+      - LEFT ALT
   Lower:
-    - - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
+    - - CAPSLOCK
+      - LOCKING SCROLL
+      - LOCKING NUM
+      - PRINTSCREEN
+      - BRI DN
+      - BRI UP
+      - Ctrl+MUTE
+      - MUTE
+      - VOL DN
+      - VOL UP
+      - INS
+      - DEL
     - - CAPSLOCK
       - '1'
       - '2'
@@ -105,16 +94,16 @@ layers:
         type: trans
     - - t: $$mdi:transfer$$
         type: trans
-      - h: '1'
-        s: $$mdi:bluetooth-connect$$
-      - h: '2'
-        s: $$mdi:bluetooth-connect$$
-      - h: '3'
-        s: $$mdi:bluetooth-connect$$
-      - h: '4'
-        s: $$mdi:bluetooth-connect$$
-      - h: '5'
-        s: $$mdi:bluetooth-connect$$
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
       - $$mdi:arrow-left-bold$$
       - $$mdi:arrow-down-bold$$
       - $$mdi:arrow-up-bold$$
@@ -125,7 +114,6 @@ layers:
         type: trans
     - - t: $$mdi:transfer$$
         type: trans
-      - $$mdi:bluetooth-off$$
       - t: $$mdi:transfer$$
         type: trans
       - t: $$mdi:transfer$$
@@ -136,14 +124,11 @@ layers:
         type: trans
       - t: $$mdi:transfer$$
         type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
+      - HOME
+      - $$mdi:transfer-down$$
+      - $$mdi:transfer-up$$
+      - END
+      - CMENU
       - t: $$mdi:transfer$$
         type: trans
     - - t: $$mdi:transfer$$
@@ -160,28 +145,17 @@ layers:
   Raise:
     - - t: $$mdi:transfer$$
         type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
-      - t: $$mdi:transfer$$
-        type: trans
+      - F1
+      - F2
+      - F3
+      - F4
+      - F5
+      - F6
+      - F7
+      - F8
+      - F9
+      - F10
+      - F11
     - - t: $$mdi:transfer$$
         type: trans
       - '!'
@@ -191,11 +165,10 @@ layers:
       - '%'
       - ^
       - '&'
-      - KP MULTIPLY
+      - '*'
       - (
       - )
-      - t: $$mdi:transfer$$
-        type: trans
+      - F12
     - - t: $$mdi:transfer$$
         type: trans
       - t: $$mdi:transfer$$
@@ -350,6 +323,113 @@ layers:
         type: trans
       - t: $$mdi:transfer$$
         type: trans
+  Adjust:
+    - - '&studio_unlock'
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - $$mdi:bluetooth-off$$
+      - $$mdi:bluetooth-off$$
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - BT CLR ALL
+    - - t: $$mdi:transfer$$
+        type: trans
+      - h: '1'
+        s: $$mdi:bluetooth-connect$$
+      - h: '2'
+        s: $$mdi:bluetooth-connect$$
+      - h: '3'
+        s: $$mdi:bluetooth-connect$$
+      - h: '4'
+        s: $$mdi:bluetooth-connect$$
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - h: '1'
+        s: $$mdi:bluetooth-connect$$
+      - h: '2'
+        s: $$mdi:bluetooth-connect$$
+      - h: '3'
+        s: $$mdi:bluetooth-connect$$
+      - h: '4'
+        s: $$mdi:bluetooth-connect$$
+      - t: $$mdi:transfer$$
+        type: trans
+    - - t: $$mdi:transfer$$
+        type: trans
+      - t: BT DISC
+        h: '0'
+      - t: BT DISC
+        h: '1'
+      - t: BT DISC
+        h: '2'
+      - t: BT DISC
+        h: '3'
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: BT DISC
+        h: '0'
+      - t: BT DISC
+        h: '1'
+      - t: BT DISC
+        h: '2'
+      - t: BT DISC
+        h: '3'
+      - t: $$mdi:transfer$$
+        type: trans
+    - - '&bootloader'
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - '&bootloader'
+    - - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+      - type: held
+      - t: $$mdi:transfer$$
+        type: trans
+      - t: $$mdi:transfer$$
+        type: trans
+combos:
+  - p:
+      - 31
+      - 32
+    k: BACKSPACE
 draw_config:
   append_colon_to_layer_header: false
   draw_key_sides: true
